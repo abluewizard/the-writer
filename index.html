@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.OldText {
+  position: absolute;
+  text-align: right;
+  color: #afafaf;
+  bottom: 36px;
+  right: 1%;
+}
+p.NewText {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  right: 1%;
+}
+div.consoleBox {
+    float: left;
+    margin: 3%;
+    border:1px solid #d3d3d3;
+    height:300px;
+    width:60%;
+    overflow:hidden;
+    position: relative;
+}
+div.stats {
+    float: left;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="stats">
+<h1>The Writer</h1>
+
+<p id="words">Novel Word Count: </p>
+
+<p id="moneys">Hi</p>
+
+<button type="button"
+onclick="drinkCoffee()">
+Drink more Coffee</button><p></p>
+
+<script src="sketch.js"></script>
+
+<canvas id="creativity" width="200" height="40" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas><p></p>
+
+<canvas id="coffee" width="200" height="40" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>var startCreativityCount = setInterval(creativityCount, 100); creativity = 100</script>
+<script>var startCoffeeCount = coffeeCount();</script><p></p>
+<script>var startCoffeeCount = coffeeCount();</script><p></p>
+
+<button type="button"
+onclick="buyCoffee()">
+Buy Coffee</button>
+</div>
+
+<div class="consoleBox" id="cBox">
+<p class="OldText" id="oldBox"></p>
+<p class="NewText" id="newBox"></p>
+</div>
+
+</body>
+</html>
